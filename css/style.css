@@ -126,8 +126,9 @@ ul a:hover {
 
 /* Hero Section */
 #hero-section {
+  padding: auto;
   background: #fff5f2;
-  height: 46rem;
+  height: 60rem;
 }
 
 
@@ -144,7 +145,7 @@ ul a:hover {
   width: 80%;
   height: auto;
   display: block;
-  margin-top: 60px;
+  margin-top: 5rem;
 }
 
 #hero-section .text {
