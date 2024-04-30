@@ -26,7 +26,7 @@ body {
 
 .section {
   width: 100%;
-  padding: 40px 4rem;
+  padding: 5rem 0;
 }
 
 .flex {
@@ -127,7 +127,7 @@ ul a:hover {
 /* Hero Section */
 #hero-section {
   background: #fff5f2;
-  height: 60rem;
+  height: 46rem;
 }
 
 
