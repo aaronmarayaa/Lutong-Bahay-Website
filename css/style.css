@@ -200,6 +200,11 @@ ul a:hover {
 /* End About */
 
 /* Restaurant Menu */
+.category ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
 .category {
   list-style: none;
   text-align: center;
@@ -216,52 +221,6 @@ ul a:hover {
 
 .category li.active {
   color: var(--clr-primary);
-}
-
-.restaurant-menu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.menu-item {
-  width: 260px;
-  margin: 0 auto;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.menu-item img {
-  width: 100%;
-}
-
-.order {
-  justify-content: space-between;
-}
-
-.btn-menu {
-  padding: 6px 10px;
-  font-size: 16px;
-  text-align: center;
-  background: #fff;
-  border: 1px solid var(--clr-primary);
-  color: var(--clr-primary);
-  transition: 300ms;
-}
-
-.btn-menu:hover {
-  background-color: var(--clr-primary);
-  color: white;
-}
-
-.title {
-  font-size: 18px;
-  font-weight: 300;
-  margin: 8px 0;
-}
-
-.location {
-  font-size: 18px;
-  font-weight: 500;
 }
 /* End Restaurant Menu */
 
@@ -312,8 +271,6 @@ summary:hover {
   color: white;
 
 }
-
-
 /* End FAQ */
 
 /* App */
@@ -499,7 +456,7 @@ summary:hover {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 600px) {
   .container {
     padding: 0 10px;
   }
@@ -537,5 +494,6 @@ summary:hover {
     font-size: 17px;
   }
 }
+
 /* End Responsive  */
 
