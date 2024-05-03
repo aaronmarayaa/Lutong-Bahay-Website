@@ -39,7 +39,7 @@
 
 /* Restaurant Menu */
 .container {
-  animation: fade-in 400ms ease-in-out forwards;
+    animation: fade-in 400ms ease-in-out forwards;
 }
 
 @keyframes fade-in {
