@@ -205,10 +205,9 @@ ul.nmenu a:hover {
 }
 
 .box {
-  height: 7rem;
-  width: 17rem;
+  
   border: 1px solid #b2b2b2;
-  padding: 12px 5px;
+  padding: 1.5rem 1rem;
   margin: 0 10px;
   border-radius: 8px;
   font-size: 18px;
@@ -394,6 +393,10 @@ summary:hover {
 
 /* Responsive  */
 @media (max-width: 1024px) {
+
+  #about .visual img{
+    margin-top: 12rem;
+  }
   .video-card {
     top: 35%;
   }
@@ -410,7 +413,7 @@ summary:hover {
 
 @media (max-width: 850px) {
   .video-card {
-    top: 35%;
+    display: none;
   }
 
   .section {
@@ -517,6 +520,8 @@ summary:hover {
   #hero-section {
     margin-top: 8rem;
   }
+
+  
 
   .container {
     padding: 0 10px;
