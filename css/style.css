@@ -409,11 +409,19 @@ summary:hover {
   nav ul li a {
     font-size: 16px;
   }
+
+  .hero-text {
+    font-size: 7rem;
+  }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 860px) {
   .video-card {
     display: none;
+  }
+
+  .hero-text {
+    font-size: 10rem;
   }
 
   .section {
@@ -506,13 +514,12 @@ summary:hover {
 
   .footer-about {
     width: 100%;
-    text-align: center;
   }
 
   .quick-links,
   .get-in-touch,
   .footer-category {
-    display: none;
+    margin-top: 1rem;
   }
 }
 
