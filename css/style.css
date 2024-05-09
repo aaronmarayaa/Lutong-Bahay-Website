@@ -192,10 +192,6 @@ ul.nmenu a:hover {
 #hero-section .text {
   margin-left: 30px;
 }
-
-#hero-section .visual img {
-  margin-left: auto;
-}
 /* End Hero Section */
 
 /* How It Works */
@@ -206,6 +202,7 @@ ul.nmenu a:hover {
 }
 
 .box {
+  height: 7rem;
   border: 1px solid #b2b2b2;
   padding: 12px 5px;
   margin: 0 10px;
