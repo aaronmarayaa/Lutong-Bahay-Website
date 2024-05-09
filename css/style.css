@@ -14,6 +14,11 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+ul li a{
+  text-decoration: none;
+  color: #b2b2b2;;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -26,7 +31,7 @@ body {
 
 .section {
   width: 100%;
-  padding: 5rem 0;
+  padding: 4.5rem 5rem;
 }
 
 .flex {
@@ -88,7 +93,6 @@ label.logo {
   font-weight: 700;
 }
 
-
 nav ul {
   float: right;
   margin-right: 20px;
@@ -107,7 +111,11 @@ nav ul li a {
   color: var(--clr-secondary);
 }
 
-ul a:hover {
+ul.nbar a:hover {
+  border-bottom: 2px solid var(--clr-primary);
+  transition: 0.3s;
+}
+ul.nmenu a:hover {
   border-bottom: 2px solid var(--clr-primary);
   transition: 0.3s;
 }
@@ -125,12 +133,45 @@ ul a:hover {
 /* End Menu */
 
 /* Hero Section */
-#hero-section {
-  padding: auto;
-  background: #fff5f2;
-  height: 46rem;
+.video-bg {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -2;
 }
 
+.video-card {
+  width: 65%;
+  top: 6rem;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+.line {
+  width: 70%;
+  height: 75%;
+  border: 1px solid #b2b2b2;
+  position: absolute;
+  top: 7rem;
+  border-radius: 100px 12px;
+}
+
+#hero-section {
+  color: white;
+  padding: auto;
+  height: 46rem;
+  animation: fade-in 400ms ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .text,
 .visual {
@@ -166,7 +207,7 @@ ul a:hover {
 
 .box {
   border: 1px solid #b2b2b2;
-  padding: 25px 5px;
+  padding: 12px 5px;
   margin: 0 10px;
   border-radius: 8px;
   font-size: 18px;
@@ -351,7 +392,11 @@ summary:hover {
 /* End Footer */
 
 /* Responsive  */
-@media (max-width: 952px) {
+@media (max-width: 1024px) {
+  .video-card {
+    top: 35%;
+  }
+  
   label.logo {
     font-size: 30px;
     padding-left: 20px;
@@ -362,22 +407,33 @@ summary:hover {
   }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 850px) {
+  .video-card {
+    top: 35%;
+  }
+
+  .section {
+    padding: 5rem 2rem;
+  }
+
   .checkbtn {
     display: block;
     color: var(--clr-primary);
   }
 
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 80px;
-    left: -100%;
+  ul.nbar {
+    display: none;
+  }
+
+  ul.nmenu {
+    display: flex;
+    flex-direction: column;
     top: 80px;
     transition: all 0.5s;
-    text-align: center;
-    background: #fff5f2;
+  }
+
+  ul.nmenu li {
+    margin-top: 1rem;
   }
 
   nav ul li {
@@ -456,7 +512,11 @@ summary:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  #hero-section {
+    margin-top: 8rem;
+  }
+
   .container {
     padding: 0 10px;
   }
@@ -483,7 +543,7 @@ summary:hover {
   }
 
   .primary {
-    font-size: 48px;
+    font-size: 30px;
   }
 
   .secondary {

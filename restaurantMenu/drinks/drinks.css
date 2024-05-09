@@ -16,7 +16,6 @@
 
 .section {
   width: 100%;
-  padding: 5rem 0;
 }
 
 .flex {
@@ -36,10 +35,11 @@
   display: inline-block;
   margin: 20px 0;
 }
+/* End Base */
 
 /* Restaurant Menu */
 .container {
-    animation: fade-in 400ms ease-in-out forwards;
+  animation: fade-in 400ms ease-in-out forwards;
 }
 
 @keyframes fade-in {
@@ -116,4 +116,29 @@
 }
 /* End Restaurant Menu */
 
+/* Responsive  */
+
+@media (max-width: 858px) {
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .restaurant-menu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  
+
+  .restaurant-menu {
+    grid-template-columns: 1fr;
+  }
+
+  
+}
+
+/* End Responsive  */
 

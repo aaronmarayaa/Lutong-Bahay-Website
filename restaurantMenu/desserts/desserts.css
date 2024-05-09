@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+/* Base */
+:root {
+  --clr-primary: #fe5722;
+  --clr-secondary: #10162f;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.section {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.btn {
+  padding: 14px 20px;
+  background: var(--clr-primary);
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  display: inline-block;
+  margin: 20px 0;
+}
+/* End Base */
+
+/* Restaurant Menu */
+.container {
+  animation: fade-in 400ms ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.category {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+.category li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.category li.active {
+  color: var(--clr-primary);
+}
+
+.restaurant-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-item {
+  width: 260px;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 100%;
+}
+
+.order {
+  justify-content: space-between;
+}
+
+.btn-menu {
+  padding: 6px 10px;
+  font-size: 16px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+  transition: 300ms;
+}
+
+.btn-menu:hover {
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 8px 0;
+}
+
+.location {
+  font-size: 18px;
+  font-weight: 500;
+}
+/* End Restaurant Menu */
+
+/* Responsive  */
+
+@media (max-width: 858px) {
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .restaurant-menu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  
+
+  .restaurant-menu {
+    grid-template-columns: 1fr;
+  }
+
+  
+}
+
+/* End Responsive  */
+
