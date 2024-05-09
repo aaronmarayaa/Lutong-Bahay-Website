@@ -137,14 +137,14 @@ ul.nmenu a:hover {
   min-width: 100%;
   min-height: 100%;
   position: absolute;
-  z-index: -2;
+  z-index: -3;
 }
 
 .video-card {
   width: 65%;
   top: 6rem;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   border-radius: 1rem;
 }
 
@@ -155,6 +155,7 @@ ul.nmenu a:hover {
   position: absolute;
   top: 7rem;
   border-radius: 100px 12px;
+  z-index: -1;
 }
 
 #hero-section {
