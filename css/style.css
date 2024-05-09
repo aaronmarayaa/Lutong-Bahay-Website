@@ -159,8 +159,7 @@ ul.nmenu a:hover {
 
 #hero-section {
   color: white;
-  padding: auto;
-  height: 46rem;
+  min-height: 100%;
   animation: fade-in 400ms ease-in-out forwards;
 }
 
@@ -180,6 +179,10 @@ ul.nmenu a:hover {
 
 .text {
   margin: 0 20px;
+}
+
+.hero-text {
+  margin: 7rem;
 }
 
 .visual img {
